@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- === HEADER === -->
+    <header class="header">
+      <div class="showcase">
+        <h2 class="hello">Hello,
+          <span>Bart</span>!</h2>
+        <p>How are you?</p>
+        <h5 class="tasks-number">You have
+          <span>any</span> task(s) to do.</h5>
+      </div>
+      <div class="info">
+        <div>
+          <h4 class="day">Monday,</h4>
+          <h4 class="clock">12:00:00</h4>
+        </div>
+        <h5 class="date">June, 2018</h5>
+        <button class="open-btn">+
+        </button>
+      </div>
+    </header>
+    <!-- === ADD PANEL === -->
+    <div class="add-panel">
+      <div class="panel-container">
+        <button class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <h2>Add task:</h2>
+        <input id="add-item" type="text" placeholder="Name of task ...">
+        <h3>Description:</h3>
+        <input id="add-description" type="text" placeholder="Short note ...">
+        <h3>Category:</h3>
+        <ul class="categories">
+          <li class="input-container">
+            <input id="home" class="radio-button" type="radio" name="radio" value="home" />
+            <div class="radio-tile">
+              <div class="icon home-icon">
+                <i class="fas fa-home"></i>
+              </div>
+              <label for="home" class="radio-tile-label">Home</label>
+            </div>
+          </li>
+          <li class="input-container">
+            <input id="work" class="radio-button" type="radio" name="radio" value="work" />
+            <div class="radio-tile">
+              <div class="icon work-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <label for="work" class="radio-tile-label">Work</label>
+            </div>
+          </li>
+          <li class="input-container">
+            <input id="school" class="radio-button" type="radio" name="radio" value="school" />
+            <div class="radio-tile">
+              <div class="icon school-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <label for="school" class="radio-tile-label">School</label>
+            </div>
+          </li>
+          <li class="input-container">
+            <input id="shop" class="radio-button" type="radio" name="radio" value="shop" />
+            <div class="radio-tile">
+              <div class="icon shop-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <label for="shop" class="radio-tile-label">Shop</label>
+            </div>
+          </li>
+          <li class="input-container">
+            <input id="hobby" class="radio-button" type="radio" name="radio" value="hobby" />
+            <div class="radio-tile">
+              <div class="icon hobby-icon">
+                <i class="fas fa-camera"></i>
+              </div>
+              <label for="hobby" class="radio-tile-label">Hobby</label>
+            </div>
+          </li>
+          <li class="input-container">
+            <input id="others" class="radio-button" type="radio" name="radio" value="others" />
+            <div class="radio-tile">
+              <div class="icon others-icon">
+                <i class="fas fa-beer"></i>
+              </div>
+              <label for="others" class="radio-tile-label">Others</label>
+            </div>
+          </li>
+        </ul>
+        <button class="add-btn">Done</button>
+      </div>
+    </div>
+    <!-- === LISTS === -->
+    <main class="main-content">
+      <ul class="todo" id="todo"></ul>
+      <ul class="todo" id="completed"></ul>
+      <!-- === ITEM === -->
+      <!-- <li class="item">
+          <div class="left">
+            <div class="left-top">
+              <button id="done" class="done">
+                <i class="fas fa-check"></i>
+              </button>
+              <div class="category">
+                <i class="fas fa-home"></i>
+              </div>
+            </div>
+            <div class="task">
+              <p id="task-value">First task to do</p>
+            </div>
+            <div id="desc-text" class="description-text">
+              <p id="desc-value">This is short note about this task ...</p>
+            </div>
+          </div>
+          <div class="right">
+            <button id="delete-btn" class="delete">
+              <i class="fas fa-times"></i>
+            </button>
+            <button id="show-desc-btn" class="description">
+              <i class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+        </li> -->
+    </main>
+    <!-- === FOOTER === -->
+    <footer class="footer">
+      <label class="switch">
+        <input type="checkbox" id="switch-checkbox">
+        <span class="slider round"></span>
+      </label>
+      <button class="settings">
+        <i class="fas fa-cog"></i>
+      </button>
+  </div>
+  </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
