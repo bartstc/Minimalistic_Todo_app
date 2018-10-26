@@ -154,10 +154,13 @@ label {
   margin-top: 0.5em;
   height: 36px;
   width: 36px;
-  font-size: 1.8rem;
   background: transparent;
-  border: 2px solid var(--first-color);
+  border: 3px solid var(--first-color);
   border-radius: 0.35rem;
+}
+
+.open-btn .fa-plus {
+  font-size: 1.4em;
 }
 
 /* ADD PANEL */
