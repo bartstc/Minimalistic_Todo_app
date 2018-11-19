@@ -377,6 +377,7 @@ ul.todo#completed .item .task-value {
   place-items: center;
   margin-right: 0.9em;
   transition: 0.2s;
+  z-index: 100;
 }
 
 .left .left-top .done:hover {
@@ -386,6 +387,7 @@ ul.todo#completed .item .task-value {
 
 .done .fas {
   color: var(--first-color);
+  /* z-index: -10; */
 }
 
 .done .fas:hover {
