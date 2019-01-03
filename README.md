@@ -1,2 +1,1 @@
-# Todo_app
-My first app in javascript, with localstorage.
+## My first application in Javascript, it use localstorage for saving data.
